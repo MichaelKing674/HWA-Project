@@ -42,19 +42,6 @@ let printResults = (result) => {
     entryTR.appendChild(delButton);
     tbody.appendChild(entryTR);
 
-
-
-    // let entryParent = document.createElement("div");
-    // entryParent.setAttribute("class", "entry-parent");
-
-    // let entryDiv = document.createElement("div");
-    // entryDiv.setAttribute("class", "entry-div");
-    // entryDiv.textContent = `[${result.id}] ${result.firstName} ${result.lastName} | ${result.team} | ${result.wins} Wins | ${result.podiumFinishes} Podium Finishes |`
-
-
-    // entryParent.appendChild(entryDiv)
-    // entryParent.appendChild(delButton);
-    // resultsDiv.appendChild(entryParent);
 }
 let getAll = () => {
     axios.get("http://localhost:8080/driver/getAll")
@@ -141,5 +128,4 @@ let validate = (type) => {
 
 
 createButton.addEventListener("click", create);
-deleteButton.addEventListener("click", delByID);
 updateButton.addEventListener("click", update);

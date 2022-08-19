@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <title>Michael King - HWA</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@
 
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">HWA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -27,24 +28,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
+                        <a class="nav-link" href="https://www.formula1.com/en/drivers.html">F1 Page</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -57,7 +41,7 @@
 
 
     <div id="form-div">
-        <form>
+        <form id="fBoxes">
             <div class="mb-3 row">
                 <input type="text" class="form-control" id="firstNameInput" placeholder="First Name">
             </div>
@@ -78,16 +62,15 @@
             <div id="buttons">
             <button type="button" class="btn btn-success" id="createButton">Create</button>
             <button type="button" class="btn btn-primary" id="updateButton">Update</button>
-            <button type="button" class="btn btn-danger" id="deleteButton">Delete</button>
             <form>
-                <input type="number" class="form-control" id="idInput" placeholder="Input ID">
+                <input type="number" class="form-control" id="idInput" placeholder="Update ID">
             </form>
         </div>
         </form>
     </div>
 
     <div id="results-div">
-        <table class="table" id="table1">
+        <table class="table scrollbar-juicy-peach" id="table1" >
             <thead>
               <tr>
                 <th scope="col">ID</th>
@@ -104,11 +87,14 @@
         </table>
     </div>
 
-    <script src="./js/main.js"></script>
+    <script src="./js\main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
 </body>
+<footer>
+    <div id="footerText" class="container">Michael King - HWA</div>
+</footer>
 
 </html>
